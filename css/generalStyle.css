@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  position: absolute;
+  z-index: 10;
+}
+
+nav > ul {
+  list-style-type: none;
+  line-height: 13vh;
+  font-size: 2.3vh;
+}
+
+nav > ul > li > a {
+  text-decoration: none;
+  font-family: sans-serif;
+  color: black;
+}
+
+header {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+canvas {
+  position: absolute;
+}
+
+.containerSvg {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.fishFace {
+  position: absolute;
+  width: 21%;
+  top: 31.3vh;
+  left: 37vw;
+}
