@@ -9,7 +9,7 @@
 </head>
 <body>
   <nav id="nav">
-    <ul>
+    <ul onclick="window.myFunction(event)">
       <li><a href="#home" class="smoothy-scroll">home</a></li>
       <li><a href="#about" class="smoothy-scroll">about</a></li>
       <li><a href="#gallery" class="smoothy-scroll">gallery</a></li>
@@ -94,14 +94,24 @@
       </svg>
     </div>
   </header>
-  <main id="about">
 
+  <main id="about">
+    <figure>
+      <img src="img/1.jpg" alt="">
+    </figure>
   </main>
+
   <section id="gallery" class="gallery">
+    <figure>
+      <img src="img/2.jpg" alt="">
+    </figure>
 
   </section>
-  <footer id="contact">
 
+  <footer id="contact">
+      <figure>
+        <img src="img/3.jpg" alt="">
+      </figure>
   </footer>
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/smoothscroll.js"></script>
@@ -109,5 +119,15 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
   <script src="js/canvas.js"></script>
   <script src="main.js"></script>
+  <script>
+      window.myFunction = function(event) {
+    // reset all menu items
+    document.querySelectorAll('ul li a.active').forEach(function(item) {
+    item.classList.remove('active');
+    })
+    // mark as active selected menu item
+    event.target.classList.add("active");
+    };
+  </script>
 </body>
 </html>
