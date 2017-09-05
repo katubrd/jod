@@ -60,9 +60,9 @@ canvas {
 
 .fishFace {
   position: absolute;
-  width: 13.7%;
-  top: 23.3vh;
-  left: 47vw;
+  width: 21%;
+  top: 19vh;
+  left: 39vw;
 }
 
 .logoContainer {
@@ -75,7 +75,61 @@ canvas {
 main, .gallery, footer {
   width: 100%;
   height: 105vh;
+  position: relative;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+main > figure {
+  position: relative;
+  top: 23vh;
+}
+
+main > figure > img {
+  position: absolute;
+  right: 0;
 }
 
 .gallery {
+  position: relative;
+
+}
+
+.galleryContainer {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 50% 50%;
+  grid-row-gap: 4.7vh;
+  width: 81%;
+  right: 0.3vw;
+  top: 9.7vh;
+}
+
+.galleryContainer > figure {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  width: 87%;
+}
+
+.galleryContainer > figure > img {
+  width: 100%;
+}
+
+footer > figure {
+  position: absolute;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  width: 37%;
+  right: 7vw;
+  top: 23vh;
+}
+
+footer > figure > img {
+  width: 100%;
 }
