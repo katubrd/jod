@@ -2,37 +2,40 @@ body {
   margin: 0;
   padding: 0;
   position: relative;
-  background-color: #031316;
+  background-color: #EEEEEE;
 }
 
 nav {
   position: fixed;
   z-index: 10;
-  width: 10%;
-  left: 0.3vw;
-  top: 17vh;
+  width: 75%;
+  left: 11.7vw;
+  display: none;
 }
 
 nav > ul {
   list-style-type: none;
   line-height: 13vh;
   text-align: left;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  width: 100%;
 }
 
 nav > ul > li > a {
   text-decoration: none;
   font-family: sans-serif;
   font-size: 2.9vh;
-  font-weight: normal;
-  color: #fff;
+  font-weight: 600;
+  color: #0F090A;
   text-transform: uppercase;
 }
 
 nav > ul > li > a:hover {
   font-size: 3.5vh;
-  font-weight: bold;
-  transition: font-size 0.7s, font-weight 0.7s;
-  webkit-transition: font-size 0.7s, font-weight 0.7s;
+  font-weight: 900;
+  transition: font-size 0.5s, font-weight 0.5s;
+  webkit-transition: font-size 0.5s, font-weight 0.5s;
 }
 
 nav > ul > li > a.active {
@@ -43,7 +46,7 @@ header {
   position: relative;
   width: 100%;
   height: 100vh;
-  background-color: #031316;
+  background-color: #EEEEEE;
 }
 
 canvas {
@@ -61,29 +64,41 @@ canvas {
 .fishFace {
   position: absolute;
   width: 21%;
-  top: 19vh;
-  left: 39vw;
+  top: 39vh;
+  left: 67vw;
 }
 
-.logoContainer {
+.logoContainer,
+.logoContainer2 {
   position: absolute;
-  width: 37%;
-  top: 63.7vh;
-  left: 37vw;
+  width: 43%;
+  top: 27vh;
+  left: 11vw;
 }
 
-main, .gallery, footer {
+.logoContainer2 {
+  left: 11.3vw;
+}
+
+/*main, .gallery, footer {
   width: 100%;
   height: 105vh;
   position: relative;
-}
+}*/
 
 main {
-  display: grid;
-  grid-template-columns: 50% 50%;
+  /*display: grid;
+  grid-template-columns: 50% 50%;*/
+
+  width: 100%;
+  height: 95vh;
 }
 
-main > figure {
+main > img {
+  width: 100%;
+}
+
+/*main > figure {
   position: relative;
   top: 23vh;
 }
@@ -132,4 +147,4 @@ footer > figure {
 
 footer > figure > img {
   width: 100%;
-}
+}*/

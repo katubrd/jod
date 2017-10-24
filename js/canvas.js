@@ -29,11 +29,11 @@ var maxRadius = 40;
 //var minRadius = 2;
 
 var colorArray = [
-    '#22202B',
-    '#383745',
-    '#7D6962',
-    '#0F6177',
-    '#1BBC9B',
+    '#7BB0A6',
+    '#FEFCFF',
+    '#282830',
+    '#031316',
+    '#EFF7E0',
 ]
 
 window.addEventListener('mousemove', function(event) {
